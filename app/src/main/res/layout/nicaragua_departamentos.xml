@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NicaraguaDepart">
+    <TextView
+        android:id="@+id/txtvDepartamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/departamentos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ListView
+        android:id="@+id/lsvDepartamentos"
+        android:layout_width="349dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtvDepartamentos" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="392dp"
+        android:layout_height="77dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lsvDepartamentos"
+        app:layout_constraintVertical_bias="0.547"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp">
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/regresar"
+            app:cornerRadius="15dp" />
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/salir"
+            app:cornerRadius="15dp"
+            tools:layout_margin="5dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
